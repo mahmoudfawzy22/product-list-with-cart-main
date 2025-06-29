@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="master.css" />
+    <link rel="stylesheet" href="normalize.css" />
+
+    <title>Frontend Mentor | Product list with cart</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-side">
+        <h1 class="header">Desserts</h1>
+        <div class="left-side-content"></div>
+      </div>
+      <div class="right-side">
+        <h1 class="header-cart">Your Cart (0)</h1>
+        <div class="total-order"></div>
+        <div class="advise">
+          <i class="fa-solid fa-tree"></i> This is
+          <span>carbon-neutral</span> delivery
+        </div>
+        <div class="confirm-btn"><p>Confirm Order</p></div>
+      </div>
+
+      <div class="right-side-empty">
+        <h1 class="header-cart">Your Cart (0)</h1>
+        <div class="img">
+          <img src="assets/images/illustration-empty-cart.svg" alt="">
+          <p>Your added items will appear here</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <div class="alert">
+      <div class="alert-header">
+        <img src="assets/images/icon-order-confirmed.svg" alt="" />
+        <h1>Order Confirmed</h1>
+        <p>We hope you enjoy your food!</p>
+      </div>
+      <div class="alert-content">
+        <div class="alert-item">
+          <div class="img-content">
+            <img src="assets/images/image-baklava-thumbnail.jpg" alt="" />
+            <div class="content">
+              <h3>Classic Tiramisu</h3>
+              <p>1x</p>
+              <p>@$5.50</p>
+            </div>
+          </div>
+          <p class="total-price">$5.50</p>
+        </div>
+             <div class="alert-item">
+          <div class="img-content">
+            <img src="assets/images/image-baklava-thumbnail.jpg" alt="" />
+            <div class="content">
+              <h3>Classic Tiramisu</h3>
+              <p>1x</p>
+              <p>@$5.50</p>
+            </div>
+          </div>
+          <p class="total-price">$5.50</p>
+        </div>
+             <div class="alert-item">
+          <div class="img-content">
+            <img src="assets/images/image-baklava-thumbnail.jpg" alt="" />
+            <div class="content">
+              <h3>Classic Tiramisu</h3>
+              <p>1x</p>
+              <p>@$5.50</p>
+            </div>
+          </div>
+          <p class="total-price">$5.50</p>
+        </div>
+        
+        <div class="total-summary">
+          <p>Order Total</p>
+          <p>$46.50</p>
+        </div>
+        
+      </div>
+      <button class="start-new">Start New Order</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
